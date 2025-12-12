@@ -1,0 +1,159 @@
+ .navbar {
+  background-color: black !important;
+   }
+    .navbar a {
+     color: white !important;
+    }
+    .navbar i {
+    cursor: pointer;
+   }
+     
+/* Make arrow visible */
+.dropdown-toggle::after {
+    color: white !important;
+}
+
+/* Black Netflix dropdown */
+.dropdown-menu {
+    background-color: rgb(249, 242, 242) !important;
+    border: none !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: rgb(0, 0, 0) !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #9f8686 !important;
+    color: rgb(0, 0, 0) !important;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+
+/* Big background section */
+.hero {
+  position: relative;
+  height: calc(100vh - 70px); /* same height as before */
+  overflow: hidden;
+  color: white;
+}
+
+/* Dark gradient overlay like Netflix */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.2) 55%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* Make sure text is above the overlay */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Size of the title image */
+.hero-logo {
+  max-width: 500px;
+}
+
+/* Genre text */
+.hero-genre {
+  font-size: 1.1rem;
+}
+.bahubali {
+  margin-top: 74px;
+}
+.poster-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+.card {
+  width: 200px;
+  height: 250px;
+}
+.poster-img {
+  height: 300px;
+  border-radius: 8px;
+}
+.bg-dark {
+  background-color: rgb(24, 17, 17) !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;               /* make the click area larger */
+}
+
+.carousel-control-prev {
+    left: 0;                   /* push to extreme left */
+}
+
+.carousel-control-next {
+    right: 0;                  /* push to extreme right */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);         /* make arrow white if not visible */
+}
+.hero-overlay {
+  padding-left: -25%;
+}
+/* Fullscreen background video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop to fill, no black bars */
+  z-index: 0;
+}
+
+/* Dark gradient overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.3) 55%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
+}
+
+/* Content on top of video + overlay */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+/* Mute button styling */
+.mute-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  padding: 12px 14px;
+  font-size: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.mute-btn:hover {
+  background: rgba(255,255,255,0.2);
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+
+    <link rel="icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
+     <!-- Project stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Home - Netflix</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <!-- Netflix Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+           alt="" width="80">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shows</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">New & Popular</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Browse by languages</a></li>
+
+      </ul>
+
+      <!-- Right Side Icons -->
+      <div class="d-flex align-items-center gap-4">
+        <i class="bi bi-search text-white fs-4"></i>
+        <span class="text-white">Children</span>
+        <i class="bi bi-bell text-white fs-4"></i>    
+  <button class="btn dropdown-toggle p-0 border-0 bg-transparent" 
+          type="button" 
+          data-bs-toggle="dropdown" 
+          aria-expanded="false">
+
+    <img src="images/Titles/aclogo.png" alt="logo" 
+         width="35" 
+         height="35" 
+         class="rounded">
+
+  </button>
+
+  <ol class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Manage Profile</a></li>
+    <li><a class="dropdown-item" href="#">Account</a></li>
+    <li><a class="dropdown-item" href="#">Help Center</a></li>
+  </ol>
+</div>
+
+    </div>
+
+  </div>
+</nav>
+<!-- HERO SECTION -->
+<div class="hero d-flex align-items-center">
+
+  <!-- Background Video -->
+  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+  <!-- Dark overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- 🔊 Mute / Unmute Button -->
+  <button id="muteBtn" class="mute-btn">
+    <i class="bi bi-volume-mute-fill"></i>
+  </button>
+  <div class="container">
+    <div class="row">
+      <div class="bahubali col-md-6 col-12">
+        <img src="images/Titles/got(title).png" class="img-fluid mb-3 hero-logo">
+        <h3 class="fw-bold">Watch in Tamil, Telugu, Malayalam, Kannada, Hindi</h3>
+        <p class="fs-5 mt-2">
+          A young man discovers he is the lost prince...
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-3">
+      <button class="btn btn-light btn-lg d-flex align-items-center">
+            <i class="bi bi-play-fill me-2"></i> Play
+      </button>
+      <button class="btn btn-secondary btn-lg d-flex align-items-center">
+            <i class="bi bi-info-circle me-2"></i> More Info
+      </button>
+        </div>
+
+        <p class="mt-4 fw-semibold hero-genre">Epic Action & Historical Drama</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="bg-dark py-4 ">
+  <div class="container-fluid">
+
+    <h3 class="text-white mb-3">Most watched movies</h3>
+
+    <div id="carouselRow1" class="carousel slide" data-bs-ride="false">
+      
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex">
+            <img src="images/movies/Hi-Nanna-Movie.jpg"  class="poster-img me-3" width="220">
+            <img src="images/movies/athadu.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/kalki.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/spiderman no.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/kgf.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/endgame.jpg" class="poster-img me-3" width="220">
+
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex">
+            <img src="images/movies/durandar2.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/spiderinto.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/jl.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/interstellar.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/dunkrik.jpg" class="poster-img me-3" width="220">
+            <img src="images/movies/readyplayerone.jpg" class="poster-img me-3" width="220">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Left/Right Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRow1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselRow1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<section class="bg-dark py-4 ">
+  <div class="container-fluid">
+
+    <h3 class="text-white mb-3">Most watched series</h3>
+
+    <div id="carouselRow2" class="carousel slide" data-bs-ride="false">
+      
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex">
+          <img src="images/series/onepiece.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/Got.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/dark.webp" class="poster-img me-3" width="220">
+          <img src="images/series/breakingbad.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/narcos.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/it.jpg" class="poster-img me-3" width="220">
+        </div>
+      </div>
+        
+        <div class="carousel-item">
+          <div class="d-flex">
+          <img src="images/series/strangerthings.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/allofusdead.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/naruto.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/cobrakai.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/whenlife.jpg" class="poster-img me-3" width="220">
+          <img src="images/series/rocketboys.jpg" class="poster-img me-3" width="220">
+          </div>
+        </div>
+
+      </div>
+      <!-- Bootstrap Left/Right Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRow2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselRow2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const video = document.getElementById("heroVideo");
+  const muteBtn = document.getElementById("muteBtn");
+
+  muteBtn.addEventListener("click", () => {
+    video.muted = !video.muted;
+
+    // Change icon
+    if (video.muted) {
+      muteBtn.innerHTML = `<i class="bi bi-volume-mute-fill"></i>`;
+    } else {
+      muteBtn.innerHTML = `<i class="bi bi-volume-up-fill"></i>`;
+    }
+  });
+</script>
+
+</body>
+</html>
